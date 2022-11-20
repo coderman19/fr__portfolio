@@ -47,23 +47,3 @@
   margin-top: 0.5em;
 }
 
-.btn {
-  background-color: var(--accent);
-  display: inline-block;
-  padding: 20px 28px;
-  border-radius: 5px;
-  color: var(--white);
-  letter-spacing: 0.15px;
-  font-size: 16px;
-  font-weight: 500;
-  transition: opacity 0.2s ease-in;
-}
-
-.btn:hover {
-  opacity: 0.5;
-}
-
-.btn:active {
-  position: relative;
-  top: 1px;
-}

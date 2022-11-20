@@ -1,6 +1,8 @@
 @import './reset.css';
 @import './header.css';
 @import './projects.css';
+@import './footer.css';
+@import './btn.css';
 
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700);
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,700);
