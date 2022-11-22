@@ -47,3 +47,31 @@
   margin-top: 0.5em;
 }
 
+@media (max-width: 620px) {
+  .header {
+    /* отменяем правило min-height */
+    min-height: unset;
+  }
+
+  .header__wrapper {
+    margin: 0 auto;
+  }
+  .header__title {
+    font-size: 38px;
+  }
+
+  .header__title strong {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .header__title {
+    font-size: 24px;
+  }
+
+  .header__title strong {
+    font-size: 26px;
+  }
+}
+

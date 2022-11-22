@@ -30,6 +30,7 @@
   padding: 2px 20px;
   border-radius: 5px;
   border: 1px solid #000;
+  background-color: #fff;
   color: var(--black);
 
 }
@@ -41,4 +42,48 @@
 .btn-outline:active {
   position: relative;
   top: 1px;
+}
+
+/* dark mode btn */
+
+.dark-mode-btn {
+  order: 9;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 55px;
+  height: 26px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #272727;
+ 
+}
+
+.dark-mode-btn::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+ 
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: left ease-in .2s;
+}
+
+.dark-mode-btn--active::before {
+  left: 26px;
+}
+
+.dark-mode-btn__icon {
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 460px) {
+  .dark-mode-btn {
+    order: 0;
+  }
 }

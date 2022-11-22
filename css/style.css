@@ -3,33 +3,34 @@
 @import './projects.css';
 @import './footer.css';
 @import './btn.css';
+@import './contacts.css';
+@import './vars.css';
+
 
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700);
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,700);
 
 
-/* vars */
-:root {
-  --black: #171718;
-  --black-border: #26292d;
-  --white: #fff;
-  --purple: #5c62ec;
-  --text-color: var(--black);
-
-  --dark-bg: var(--black);
-  --dark-border: var(--dark-border);
-  --header-text: var(--white);
-  --accent: var(--purple);
-}
-
-
-
 /* styles */
 
 html, body {
- font-family: 'DM Sans', sans-serif;
- letter-spacing: -0.5px;
- color: var(--black);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: -0.5px;
+
+  /* color: var(--black); */
+
+  /* light mode */
+  background-color: var(--page-bg);
+  color: var(--text-color);
+
+  --project-card-bg: var(--black);
+  --project-card-text: var(--white);
+
+
 }
 
 .container {
@@ -47,9 +48,11 @@ html, body {
   letter-spacing: normal;
 }
 
+
+
 .nav__row {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   column-gap: 40px;
   row-gap: 20px;
@@ -58,6 +61,8 @@ html, body {
 
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   align-items: center;
   column-gap: 40px;
   font-size: 16px;
@@ -94,8 +99,20 @@ html, body {
   color: var(--white);
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
+  margin-right: auto;
 }
 
 .logo strong {
   font-weight: 700;
 }
+
+
+/* media */
+
+@media (max-width: 460px) {
+  .nav__row {
+    justify-content: space-between;
+  }
+
+}
+
